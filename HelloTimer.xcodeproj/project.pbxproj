@@ -18,6 +18,8 @@
 		09983C6B18C9F3E800EC4DF5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09983C4A18C9F3E700EC4DF5 /* Cocoa.framework */; };
 		09983C7318C9F3E800EC4DF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09983C7118C9F3E800EC4DF5 /* InfoPlist.strings */; };
 		09983C7518C9F3E800EC4DF5 /* HelloTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09983C7418C9F3E800EC4DF5 /* HelloTimerTests.m */; };
+		09983C8318C9F6FC00EC4DF5 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09983C8118C9F6FC00EC4DF5 /* MainWindowController.m */; };
+		09983C8418C9F6FC00EC4DF5 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09983C8218C9F6FC00EC4DF5 /* MainWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		09983C7018C9F3E800EC4DF5 /* HelloTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloTimerTests-Info.plist"; sourceTree = "<group>"; };
 		09983C7218C9F3E800EC4DF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09983C7418C9F3E800EC4DF5 /* HelloTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloTimerTests.m; sourceTree = "<group>"; };
+		09983C8018C9F6FC00EC4DF5 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		09983C8118C9F6FC00EC4DF5 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		09983C8218C9F6FC00EC4DF5 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +120,10 @@
 		09983C5018C9F3E700EC4DF5 /* HelloTimer */ = {
 			isa = PBXGroup;
 			children = (
+				09983C7F18C9F48D00EC4DF5 /* Controllers */,
+				09983C7E18C9F47D00EC4DF5 /* Resources */,
 				09983C5C18C9F3E700EC4DF5 /* bearAppDelegate.h */,
 				09983C5D18C9F3E700EC4DF5 /* bearAppDelegate.m */,
-				09983C5F18C9F3E800EC4DF5 /* MainMenu.xib */,
 				09983C6218C9F3E800EC4DF5 /* Images.xcassets */,
 				09983C5118C9F3E700EC4DF5 /* Supporting Files */,
 			);
@@ -152,6 +158,24 @@
 				09983C7118C9F3E800EC4DF5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09983C7E18C9F47D00EC4DF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09983C5F18C9F3E800EC4DF5 /* MainMenu.xib */,
+				09983C8218C9F6FC00EC4DF5 /* MainWindowController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		09983C7F18C9F48D00EC4DF5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09983C8018C9F6FC00EC4DF5 /* MainWindowController.h */,
+				09983C8118C9F6FC00EC4DF5 /* MainWindowController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +259,7 @@
 				09983C6318C9F3E800EC4DF5 /* Images.xcassets in Resources */,
 				09983C5B18C9F3E700EC4DF5 /* Credits.rtf in Resources */,
 				09983C6118C9F3E800EC4DF5 /* MainMenu.xib in Resources */,
+				09983C8418C9F6FC00EC4DF5 /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09983C8318C9F6FC00EC4DF5 /* MainWindowController.m in Sources */,
 				09983C5E18C9F3E700EC4DF5 /* bearAppDelegate.m in Sources */,
 				09983C5718C9F3E700EC4DF5 /* main.m in Sources */,
 			);
@@ -465,6 +491,7 @@
 				09983C7A18C9F3E800EC4DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09983C7B18C9F3E800EC4DF5 /* Build configuration list for PBXNativeTarget "HelloTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +500,7 @@
 				09983C7D18C9F3E800EC4DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
