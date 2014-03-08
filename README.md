@@ -1,6 +1,6 @@
 ## Instruction
 
-This is a simple OS X Application for HelloTimer.
+This is a simple OS X Application with using NSTimer.
 
 The Tutorial is in TakoBear.tw
 
